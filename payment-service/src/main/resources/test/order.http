@@ -1,0 +1,36 @@
+# Test order service
+
+### call find by id order service
+GET http://localhost:8083/order/2
+Content-Type: application/json
+
+
+### call save order service
+POST  http://localhost:8083/order/create
+Content-Type: application/json
+
+{
+  "name": "milk",
+  "description": "milk1",
+  "price": 80
+}
+
+###  call update order service
+PUT http://localhost:8083/order/update
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "milk",
+  "description": "milk2222",
+  "price": 80
+}
+
+### call delete order service
+DELETE http://localhost:8083/order/5
+Content-Type: application/json
+
+### call find All order service
+GET http://localhost:8083/order/find-all
+Content-Type: application/json
+
